@@ -27,7 +27,7 @@ export const DraggableStructure: FC<{ structure: Heading[] }> = ({
             Table of contents
           </Typography>
           <div className="pt-5">
-          {structure.map((heading, index) => (
+          {structure?.map((heading, index) => (
             <SortableAccordion
               key={index}
               heading={heading}
