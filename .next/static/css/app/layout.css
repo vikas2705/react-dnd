@@ -541,6 +541,9 @@ video {
 .flex {
   display: flex;
 }
+.contents {
+  display: contents;
+}
 .hidden {
   display: none;
 }
@@ -586,6 +589,9 @@ video {
 }
 .pt-4 {
   padding-top: 1rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
 }
 .italic {
   font-style: italic;

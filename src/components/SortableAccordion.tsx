@@ -74,7 +74,7 @@ export const SortableAccordion: FC<{
     <Accordion
       ref={dropRef}
       sx={{
-        opacity: isDragging ? 0.6 : 1,
+        opacity: isDragging ? 0.8 : 1,
         backgroundColor: isOver ? "rgba(173, 216, 230, 0.4)" : "white",
         border: isOver ? "2px dashed #5a9bcb" : "none",
         boxShadow: isOver ? "0px 4px 8px rgba(0, 0, 0, 0.2)" : "none",

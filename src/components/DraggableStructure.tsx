@@ -23,9 +23,10 @@ export const DraggableStructure: FC<{ structure: Heading[] }> = ({
       <div className="flex justify-between " >
       
         <div className="">
-          <Typography variant="h4" sx={{ textAlign: "center", fontWeight: "bold" }}>
-            Table of Contents
+          <Typography variant="h4" sx={{ textAlign: "center", fontWeight: "bold", paddingTop:"12px" }}>
+            Table of contents
           </Typography>
+          <div className="pt-5">
           {structure.map((heading, index) => (
             <SortableAccordion
               key={index}
@@ -37,14 +38,15 @@ export const DraggableStructure: FC<{ structure: Heading[] }> = ({
               isDroppable={false}
             />
           ))}
+          </div>
         </div>
         <div className="w-[65%] "  >
-          <Typography variant="h6" sx={{ textAlign: "center", fontStyle: "italic" }}>
+          <Typography variant="h5" sx={{ textAlign: "center", fontStyle: "italic", paddingBottom:"16px" , paddingTop:"4px" }}>
             Drag and drop headings here
           </Typography>
 
 
-          <Box sx={{ border: "2px dashed #ccc", padding: "16px", borderRadius: "8px" , paddingTop:"14px" }}>
+          <Box sx={{ border: "2px dashed #ccc", padding: "16px", borderRadius: "8px" , paddingTop:"16px" }}>
             {restructured.map((heading, index) => (
               <>
                 <SortableAccordion
