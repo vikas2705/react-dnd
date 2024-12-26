@@ -101,7 +101,7 @@ Example:
 
 ## Folder Structure
 Here's a quick breakdown of the folder structure:
-src/
+src
 ├── components/            # Reusable UI components (e.g., DraggableStructure)
 ├── pages/                 # Page components (e.g., Home)
 ├── utils/                 # Utility functions (e.g., parseDocument)
